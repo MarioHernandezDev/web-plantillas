@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elva Hernández · Bailarina Flamenca</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ── CURSOR PERSONALIZADO ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <a href="#inicio" class="nav-logo" aria-label="Inicio">EH</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#china">China</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#colaboraciones">Artistas</a></li>
+      <li><a href="#videos">Vídeos</a></li>
+      <li><a href="#experiencia">Trayectoria</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menú móvil -->
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <a href="#sobre-mi"       class="nav-mobile-link">Sobre mí</a>
+    <a href="#china"          class="nav-mobile-link">China</a>
+    <a href="#galeria"        class="nav-mobile-link">Galería</a>
+    <a href="#colaboraciones" class="nav-mobile-link">Artistas</a>
+    <a href="#videos"         class="nav-mobile-link">Vídeos</a>
+    <a href="#experiencia"    class="nav-mobile-link">Trayectoria</a>
+    <a href="#contacto"       class="nav-mobile-link">Contacto</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       1. HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="inicio" aria-label="Presentación">
+    <video class="hero-video" autoplay muted loop playsinline poster="img/hero-poster.jpg" aria-hidden="true">
+      <source src="img/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-label">Baile Español · Flamenco · Granada</p>
+      <h1 class="hero-title">
+        <span class="ht-line ht-1">Elva</span>
+        <span class="ht-line ht-2">Hernández</span>
+      </h1>
+      <p class="hero-sub">El arte que nace desde adentro</p>
+      <a href="#sobre-mi" class="hero-btn" aria-label="Conocer más">
+        <span>Descúbreme</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <span class="hero-side-text" aria-hidden="true">ARTE · PASIÓN · MOVIMIENTO</span>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="hero-scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       2. SOBRE ELLA
+  ══════════════════════════════════════ -->
+  <section class="sobre" id="sobre-mi" aria-labelledby="sobre-heading">
+    <div class="sobre-inner">
+
+      <div class="sobre-img-wrap">
+        <img src="img/alejandro.jpg" alt="Elva Hernández bailando" class="sobre-img">
+        <div class="sobre-tag" aria-hidden="true">
+          <span class="sobre-tag-num">18</span>
+          <span class="sobre-tag-label">años</span>
+        </div>
+        <div class="sobre-deco" aria-hidden="true"></div>
+
+        <div class="sobre-img-mini">
+          <img src="img/saffron.jpg" alt="Elva de niña bailando">
+          <span>Desde los 3 años</span>
+        </div>
+      </div>
+
+      <div class="sobre-text">
+        <p class="eyebrow">Sobre mí</p>
+        <h2 id="sobre-heading" class="section-title">
+          Una artista<br>que <em> vive</em> el baile<br>
+        </h2>
+        <p class="body">Nacida en Granada, ciudad que respira duende por cada calle, Elva lleva bailando desde casi antes de caminar. Con solo tres años ya pisaba las primeras tarimas; hoy, tras más de una década de formación y escenarios, el flamenco sigue siendo su lengua materna.</p>
+        <p class="body">Graduada en el <strong>Conservatorio Superior de Danza de Granada</strong>, su formación académica se une a una sensibilidad artística que no cabe en ningún aula. Cada palo del flamenco lo ha vivido desde dentro, no solo aprendido.</p>
+
+        <div class="sobre-chips" aria-label="Formación destacada">
+          <span class="chip">Conservatorio Superior de Danza — Granada</span>
+          <span class="chip">Gira Internacional — China</span>
+          <span class="chip">Baile desde los 3 años</span>
+        </div>
+
+        <div class="sobre-datos" role="list">
+          <div class="dato" role="listitem">
+            <span class="dato-n">15+</span>
+            <span class="dato-l">Años sobre el escenario</span>
+          </div>
+          <div class="dato" role="listitem">
+            <span class="dato-n">4</span>
+            <span class="dato-l">Estilos de baile</span>
+          </div>
+          <div class="dato" role="listitem">
+            <span class="dato-n">∞</span>
+            <span class="dato-l">Pasión en cada paso</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sobre-timeline-strip" aria-label="Elva a lo largo de los años">
+      <div class="sts-wrap">
+        <button class="sts-arrow sts-arrow--prev" id="stsPrev" aria-label="Fotos anteriores">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="sts-inner" id="stsInner">
+          <div class="sts-item">
+            <img src="img/saffron.jpg" alt="Elva, 3 años">
+            <span>3 años</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/iberico.jpg" alt="Elva, 8 años">
+            <span>8 años</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/rest1.jpg" alt="Elva, 12 años">
+            <span>12 años</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/lemon.jpg" alt="Elva, 15 años">
+            <span>15 años</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/evening.jpg" alt="Elva hoy">
+            <span>Hoy</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/evening.jpg" alt="Elva hoy">
+            <span>Hoy</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/evening.jpg" alt="Elva hoy">
+            <span>Hoy</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/evening.jpg" alt="Elva hoy">
+            <span>Hoy</span>
+          </div>
+          <div class="sts-item">
+            <img src="img/evening.jpg" alt="Elva hoy">
+            <span>Hoy</span>
+          </div>
+        </div>
+
+        <button class="sts-arrow sts-arrow--next" id="stsNext" aria-label="Fotos siguientes">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="sts-label" aria-hidden="true">Una vida entera sobre las tablas</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       3. CHINA — GIRA INTERNACIONAL
+  ══════════════════════════════════════ -->
+  <section class="china" id="china" aria-labelledby="china-heading">
+    <div class="china-bg" aria-hidden="true"></div>
+    <div class="china-overlay" aria-hidden="true"></div>
+
+    <div class="china-inner">
+      <div class="china-text fade">
+        <p class="eyebrow light">Gira Internacional</p>
+        <h2 id="china-heading" class="section-title light">
+          Flamenco<br><em>en China</em>
+        </h2>
+        <p class="body china-body">Durante varios meses, Elva llevó el flamenco al otro extremo del mundo: ciudades como Pekín, Shanghái y Guangzhou recibieron el duende andaluz sobre sus escenarios. Una experiencia que transformó no solo su carrera, sino su manera de entender el arte universal.</p>
+        <p class="body china-body">Formar parte de esa compañía significó bailar ante miles de espectadores que veían el flamenco por primera vez — y salir a escena sabiendo que cada zapateado era también una embajada cultural.</p>
+
+        <div class="china-stats" role="list">
+          <div class="china-stat" role="listitem">
+            <span class="cstat-n">+10</span>
+            <span class="cstat-l">Ciudades visitadas</span>
+          </div>
+          <div class="china-stat" role="listitem">
+            <span class="cstat-n">Meses</span>
+            <span class="cstat-l">De gira continua</span>
+          </div>
+          <div class="china-stat" role="listitem">
+            <span class="cstat-n">Miles</span>
+            <span class="cstat-l">De espectadores</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="china-mosaic fade">
+        <div class="cm-item cm-item--1">
+          <img src="img/team.jpg" alt="Elva en escenario durante la gira por China" loading="lazy">
+        </div>
+        <div class="cm-item cm-item--2">
+          <img src="img/brig.jpg" alt="Actuación en China" loading="lazy">
+        </div>
+        <div class="cm-item cm-item--3">
+          <img src="img/chef.jpg" alt="Entre bastidores en China" loading="lazy">
+        </div>
+        <div class="cm-item cm-item--4">
+          <img src="img/chefs.jpg" alt="Compañía en China" loading="lazy">
+          <div class="cm-badge" aria-hidden="true">中国 · China</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="china-quote">
+      <blockquote>«Descubrí que el duende no tiene idioma»</blockquote>
+      <cite>— Elva Hernández, tras la gira</cite>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       4. GALERÍA FULLWIDTH GRID
+  ══════════════════════════════════════ -->
+  <section class="galeria" id="galeria" aria-labelledby="galeria-heading">
+    <div class="galeria-header">
+      <p class="eyebrow light">Galería</p>
+      <h2 id="galeria-heading" class="section-title light">Momentos<em> congelados</em></h2>
+      <p class="galeria-sub">Una vida hecha de imágenes — ensayos, actuaciones, viajes, instantes.</p>
+    </div>
+
+    <div class="galeria-grid" id="galeriaGrid" role="list" aria-label="Galería de fotografías">
+
+      <figure class="gg-item gg-item--tall" role="listitem">
+        <img src="img/alejandro.jpg" alt="Elva en actuación" loading="lazy">
+        <figcaption>Actuación principal</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/saffron.jpg" alt="Brazos flamencos" loading="lazy">
+        <figcaption>Brazos que hablan</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/iberico.jpg" alt="Baile español en escenario" loading="lazy">
+        <figcaption>Escena en vivo</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--wide" role="listitem">
+        <img src="img/rest1.jpg" alt="Ensayo de flamenco" loading="lazy">
+        <figcaption>En el ensayo</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/lemon.jpg" alt="Traje de cola" loading="lazy">
+        <figcaption>Traje de cola</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--tall" role="listitem">
+        <img src="img/evening.jpg" alt="Retrato artístico" loading="lazy">
+        <figcaption>Retrato</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/chef.jpg" alt="Expresión en el baile" loading="lazy">
+        <figcaption>Expresión</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--wide" role="listitem">
+        <img src="img/brig.jpg" alt="Actuación de gala" loading="lazy">
+        <figcaption>Actuación de gala</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/team.jpg" alt="Con la compañía" loading="lazy">
+        <figcaption>Con la compañía</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/chefs.jpg" alt="Entre bastidores" loading="lazy">
+        <figcaption>Entre bastidores</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--tall" role="listitem">
+        <img src="img/alejandro.jpg" alt="Pose de tablao" loading="lazy">
+        <figcaption>Tablao</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/saffron.jpg" alt="Detalle de manos" loading="lazy">
+        <figcaption>Manos</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/iberico.jpg" alt="Zapateado" loading="lazy">
+        <figcaption>Zapateado</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--wide" role="listitem">
+        <img src="img/team.jpg" alt="Gira por China" loading="lazy">
+        <figcaption>Gira China</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/rest1.jpg" alt="Camerino" loading="lazy">
+        <figcaption>Camerino</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/lemon.jpg" alt="Sevillanas" loading="lazy">
+        <figcaption>Sevillanas</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--tall" role="listitem">
+        <img src="img/brig.jpg" alt="Mirada" loading="lazy">
+        <figcaption>Mirada</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/evening.jpg" alt="Noche de gala" loading="lazy">
+        <figcaption>Noche de gala</figcaption>
+      </figure>
+
+      <figure class="gg-item" role="listitem">
+        <img src="img/chef.jpg" alt="Ensayo general" loading="lazy">
+        <figcaption>Ensayo general</figcaption>
+      </figure>
+
+      <figure class="gg-item gg-item--wide" role="listitem">
+        <img src="img/chefs.jpg" alt="Final de actuación" loading="lazy">
+        <figcaption>Final de actuación</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- Lightbox galería -->
+    <div class="galeria-lightbox" id="galeriaLightbox" aria-modal="true" role="dialog" aria-label="Foto ampliada" hidden>
+      <button class="glb-close" id="galeriaLbClose" aria-label="Cerrar foto">✕</button>
+      <button class="glb-prev" id="galeriaLbPrev" aria-label="Foto anterior">‹</button>
+      <button class="glb-next" id="galeriaLbNext" aria-label="Foto siguiente">›</button>
+      <div class="glb-inner">
+        <img src="" alt="" id="galeriaLbImg">
+        <p class="glb-caption" id="galeriaLbCap"></p>
+      </div>
+      <p class="glb-counter" id="galeriaLbCounter"></p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       5. COLABORACIONES
+  ══════════════════════════════════════ -->
+  <section class="colab" id="colaboraciones" aria-labelledby="colab-heading">
+    <div class="colab-inner">
+      <div class="colab-header fade">
+        <p class="eyebrow">Artistas</p>
+        <h2 id="colab-heading" class="section-title">
+          Compartiendo<br><em>escenario</em>
+        </h2>
+        <p class="body">A lo largo de su carrera, Elva ha tenido el privilegio de bailar junto a artistas de primer nivel. Cada colaboración ha dejado huella en su forma de entender el flamenco.</p>
+      </div>
+
+      <div class="colab-grid" role="list">
+
+        <div class="colab-card fade" role="listitem">
+          <div class="colab-img">
+            <img src="img/alejandro.jpg" alt="Artista colaboración" loading="lazy">
+            <div class="colab-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="colab-info">
+            <span class="colab-tipo">Cantaor Flamenco</span>
+            <h3 class="colab-nombre">Nombre Artista</h3>
+            <p class="colab-desc">Actuaciones conjuntas en festivales nacionales e internacionales.</p>
+          </div>
+        </div>
+
+        <div class="colab-card fade" role="listitem">
+          <div class="colab-img">
+            <img src="img/saffron.jpg" alt="Artista colaboración" loading="lazy">
+            <div class="colab-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="colab-info">
+            <span class="colab-tipo">Guitarrista</span>
+            <h3 class="colab-nombre">Nombre Artista</h3>
+            <p class="colab-desc">Colaboración en espectáculo de temporada, gira por Andalucía.</p>
+          </div>
+        </div>
+
+        <div class="colab-card fade" role="listitem">
+          <div class="colab-img">
+            <img src="img/brig.jpg" alt="Artista colaboración" loading="lazy">
+            <div class="colab-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="colab-info">
+            <span class="colab-tipo">Bailaora</span>
+            <h3 class="colab-nombre">Nombre Artista</h3>
+            <p class="colab-desc">Dúo flamenco presentado en el Festival de Jerez.</p>
+          </div>
+        </div>
+
+        <div class="colab-card fade" role="listitem">
+          <div class="colab-img">
+            <img src="img/team.jpg" alt="Artista colaboración" loading="lazy">
+            <div class="colab-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="colab-info">
+            <span class="colab-tipo">Compañía de danza</span>
+            <h3 class="colab-nombre">Nombre Compañía</h3>
+            <p class="colab-desc">Gira nacional: Madrid, Barcelona, Valencia y Sevilla.</p>
+          </div>
+        </div>
+
+        <div class="colab-card fade" role="listitem">
+          <div class="colab-img">
+            <img src="img/evening.jpg" alt="Artista colaboración" loading="lazy">
+            <div class="colab-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="colab-info">
+            <span class="colab-tipo">Percusionista</span>
+            <h3 class="colab-nombre">Nombre Artista</h3>
+            <p class="colab-desc">Espectáculo fusión flamenco-contemporáneo presentado en Granada.</p>
+          </div>
+        </div>
+
+        <div class="colab-card fade" role="listitem">
+          <div class="colab-img">
+            <img src="img/chefs.jpg" alt="Artista colaboración" loading="lazy">
+            <div class="colab-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="colab-info">
+            <span class="colab-tipo">Cantante</span>
+            <h3 class="colab-nombre">Nombre Artista</h3>
+            <p class="colab-desc">Colaboración en videoclip y actuación en directo en televisión.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="colab-nota fade">
+        ¿Tienes un proyecto artístico en mente? <a href="#contacto">Hablemos →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       6. VÍDEOS
+  ══════════════════════════════════════ -->
+  <section class="videos" id="videos" aria-labelledby="videos-heading">
+    <div class="videos-inner">
+      <div class="videos-header">
+        <p class="eyebrow">Actuaciones</p>
+        <h2 id="videos-heading" class="section-title">En<em> movimiento</em></h2>
+        <p class="body">Una selección de mis actuaciones más recientes. Cada vídeo es una historia distinta.</p>
+      </div>
+
+      <div class="videos-grid" role="list">
+        <div class="video-card fade" role="listitem">
+          <div class="video-thumb" data-src="https://www.youtube.com/embed/XXXXXXX?autoplay=1">
+            <img src="img/brig.jpg" alt="Actuación — Soleá" loading="lazy">
+            <button class="play-btn" aria-label="Reproducir vídeo: Soleá">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M19 16l14 8-14 8V16z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">Flamenco</span>
+            <h3 class="video-title">Soleá</h3>
+            <p class="video-desc">Festival de Flamenco de Jerez, 2023</p>
+          </div>
+        </div>
+
+        <div class="video-card fade" role="listitem">
+          <div class="video-thumb" data-src="https://www.youtube.com/embed/YYYYYYY?autoplay=1">
+            <img src="img/team.jpg" alt="Actuación — Sevillanas" loading="lazy">
+            <button class="play-btn" aria-label="Reproducir vídeo: Sevillanas">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M19 16l14 8-14 8V16z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">Baile Español</span>
+            <h3 class="video-title">Sevillanas</h3>
+            <p class="video-desc">Gala de Fin de Temporada, 2024</p>
+          </div>
+        </div>
+
+        <div class="video-card fade" role="listitem">
+          <div class="video-thumb" data-src="https://www.youtube.com/embed/ZZZZZZZ?autoplay=1">
+            <img src="img/chefs.jpg" alt="Actuación — Alegrías" loading="lazy">
+            <button class="play-btn" aria-label="Reproducir vídeo: Alegrías">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M19 16l14 8-14 8V16z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">Flamenco</span>
+            <h3 class="video-title">Alegrías</h3>
+            <p class="video-desc">Tablaos de Sevilla, 2024</p>
+          </div>
+        </div>
+
+        <div class="video-card fade" role="listitem">
+          <div class="video-thumb" data-src="https://www.youtube.com/embed/WWWWWWW?autoplay=1">
+            <img src="img/rest1.jpg" alt="Actuación — China" loading="lazy">
+            <div class="video-badge" aria-label="Grabado en China">中国</div>
+            <button class="play-btn" aria-label="Reproducir vídeo: Gira China">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="23" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M19 16l14 8-14 8V16z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">Gira Internacional</span>
+            <h3 class="video-title">Flamenco en China</h3>
+            <p class="video-desc">Gira por China — 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox vídeo -->
+    <div class="video-lightbox" id="videoLightbox" aria-modal="true" role="dialog" aria-label="Reproductor de vídeo" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar vídeo">✕</button>
+      <div class="lightbox-inner">
+        <iframe id="lightboxFrame" src="" allow="autoplay; fullscreen" allowfullscreen title="Vídeo de actuación"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       7. EXPERIENCIA / TRAYECTORIA
+  ══════════════════════════════════════ -->
+  <section class="exp" id="experiencia" aria-labelledby="exp-heading">
+    <div class="exp-inner">
+      <div class="exp-header fade">
+        <p class="eyebrow light">Trayectoria</p>
+        <h2 id="exp-heading" class="section-title light">Cada paso<em> cuenta</em></h2>
+      </div>
+
+      <div class="exp-grid">
+        <ol class="timeline" aria-label="Trayectoria artística">
+          <li class="tl-item fade">
+            <span class="tl-year">2007</span>
+            <div class="tl-body">
+              <h3 class="tl-title">Primeros pasos — Granada</h3>
+              <p class="tl-text">Nace en Granada. Con solo 3 años empieza a bailar en la escuela de su barrio. La tarima ya era su hogar.</p>
+            </div>
+          </li>
+          <li class="tl-item fade">
+            <span class="tl-year">2014</span>
+            <div class="tl-body">
+              <h3 class="tl-title">Conservatorio Superior de Danza</h3>
+              <p class="tl-text">Ingresa en el Conservatorio Superior de Danza de Granada, donde se forma académicamente en técnica flamenca, danza española y contemporánea.</p>
+            </div>
+          </li>
+          <li class="tl-item fade">
+            <span class="tl-year">2019</span>
+            <div class="tl-body">
+              <h3 class="tl-title">Festival de Jerez</h3>
+              <p class="tl-text">Seleccionada para el programa de jóvenes promesas del Festival de Flamenco de Jerez. Primera proyección nacional.</p>
+            </div>
+          </li>
+          <li class="tl-item fade">
+            <span class="tl-year">2022</span>
+            <div class="tl-body">
+              <h3 class="tl-title">Gira nacional</h3>
+              <p class="tl-text">Participación en espectáculo itinerante por Madrid, Barcelona, Valencia y Sevilla con compañía establecida.</p>
+            </div>
+          </li>
+          <li class="tl-item fade">
+            <span class="tl-year">2023</span>
+            <div class="tl-body">
+              <h3 class="tl-title">Gira por China</h3>
+              <p class="tl-text">Varios meses de gira internacional por las principales ciudades de China, llevando el flamenco andaluz a miles de espectadores asiáticos.</p>
+              <span class="tl-highlight">🇨🇳 Experiencia internacional</span>
+            </div>
+          </li>
+          <li class="tl-item fade">
+            <span class="tl-year">2025</span>
+            <div class="tl-body">
+              <h3 class="tl-title">Hoy</h3>
+              <p class="tl-text">Disponible para actuaciones, colaboraciones y proyectos artísticos en España e internacionalmente.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="disciplinas">
+          <h3 class="disc-title">Disciplinas</h3>
+          <div class="disc-list">
+            <div class="disc-item fade">
+              <span class="disc-name">Flamenco</span>
+              <div class="disc-bar" role="img" aria-label="Nivel: muy alto">
+                <div class="disc-fill" style="--w:95%"></div>
+              </div>
+            </div>
+            <div class="disc-item fade">
+              <span class="disc-name">Baile Español</span>
+              <div class="disc-bar" role="img" aria-label="Nivel: alto">
+                <div class="disc-fill" style="--w:88%"></div>
+              </div>
+            </div>
+            <div class="disc-item fade">
+              <span class="disc-name">Sevillanas</span>
+              <div class="disc-bar" role="img" aria-label="Nivel: muy alto">
+                <div class="disc-fill" style="--w:92%"></div>
+              </div>
+            </div>
+            <div class="disc-item fade">
+              <span class="disc-name">Danza Contemporánea</span>
+              <div class="disc-bar" role="img" aria-label="Nivel: medio-alto">
+                <div class="disc-fill" style="--w:75%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="disc-foto">
+            <img src="img/lemon.jpg" alt="Elva Hernández en actuación" loading="lazy">
+          </div>
+
+          <div class="logros">
+            <div class="logro fade">
+              <span class="logro-ico" aria-hidden="true">✦</span>
+              <span>Graduada — Conservatorio Superior de Danza de Granada</span>
+            </div>
+            <div class="logro fade">
+              <span class="logro-ico" aria-hidden="true">✦</span>
+              <span>1.er Premio — Concurso Jóvenes Artistas Flamencos 2021</span>
+            </div>
+            <div class="logro fade">
+              <span class="logro-ico" aria-hidden="true">✦</span>
+              <span>Gira Internacional por China con compañía de flamenco — 2023</span>
+            </div>
+            <div class="logro fade">
+              <span class="logro-ico" aria-hidden="true">✦</span>
+              <span>Becada por la Fundación Flamenco Vivo 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       8. FRASE ARTÍSTICA
+  ══════════════════════════════════════ -->
+  <section class="frase" aria-label="Frase artística">
+    <div class="frase-inner">
+      <span class="frase-deco" aria-hidden="true">❝</span>
+      <blockquote class="frase-text">
+        Bailar no es moverse.<br>
+        Es <em>decir</em> lo que no<br>
+        caben en las palabras.
+      </blockquote>
+      <cite class="frase-autor">— Elva Hernández</cite>
+    </div>
+    <div class="frase-particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       9. CONTACTO — vídeo de fondo
+  ══════════════════════════════════════ -->
+  <section class="contacto" id="contacto" aria-labelledby="contacto-heading">
+
+    <!-- Vídeo de fondo (mismo que el hero) -->
+    <video class="contacto-video" autoplay muted loop playsinline poster="img/hero-poster.jpg" aria-hidden="true">
+      <source src="img/hero.mp4" type="video/mp4">
+    </video>
+    <div class="contacto-overlay" aria-hidden="true"></div>
+
+    <div class="contacto-inner">
+      <div class="contacto-texto fade">
+        <p class="eyebrow">Contacto</p>
+        <h2 id="contacto-heading" class="section-title light">
+          ¿Hablamos<em>?</em>
+        </h2>
+        <p class="body">¿Tienes un evento, espectáculo o proyecto artístico en mente? Me encantaría conocerlo. Estoy disponible para actuaciones, talleres y colaboraciones dentro y fuera de España.</p>
+
+        <div class="contacto-datos">
+          <a href="mailto:elva@ejemplo.com" class="c-dato">
+            <span class="c-dato-ico" aria-hidden="true">✉</span>
+            <span>elva@ejemplo.com</span>
+          </a>
+          <a href="tel:+34600000000" class="c-dato">
+            <span class="c-dato-ico" aria-hidden="true">☎</span>
+            <span>+34 600 000 000</span>
+          </a>
+          <div class="c-social">
+            <a href="#" class="c-social-link" aria-label="Instagram">Instagram</a>
+            <a href="#" class="c-social-link" aria-label="TikTok">TikTok</a>
+            <a href="#" class="c-social-link" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contacto-form fade" id="contactoForm" novalidate aria-label="Formulario de contacto">
+        <div class="f-group">
+          <label class="f-label" for="nombre">Tu nombre <span aria-hidden="true">*</span></label>
+          <input class="f-input" id="nombre" name="nombre" type="text" placeholder="Nombre completo" required autocomplete="name">
+        </div>
+        <div class="f-group">
+          <label class="f-label" for="email">Email <span aria-hidden="true">*</span></label>
+          <input class="f-input" id="email" name="email" type="email" placeholder="tucorreo@email.com" required autocomplete="email">
+        </div>
+        <div class="f-group">
+          <label class="f-label" for="tipo">Tipo de consulta</label>
+          <select class="f-input f-select" id="tipo" name="tipo">
+            <option value="">Selecciona una opción</option>
+            <option value="actuacion">Actuación / Espectáculo</option>
+            <option value="taller">Taller / Clase magistral</option>
+            <option value="colaboracion">Colaboración artística</option>
+            <option value="internacional">Proyecto internacional</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="f-group">
+          <label class="f-label" for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+          <textarea class="f-input f-textarea" id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto…" required></textarea>
+        </div>
+        <button class="f-submit" type="submit">
+          <span>Enviar mensaje</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 9h14M9 2l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <p class="f-ok" id="formOk" aria-live="polite" hidden>
+          ✓ Mensaje enviado — te respondo pronto 🌹
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-logo">EH</span>
+      <p class="footer-copy">© 2026 Elva Hernández · Granada · Todos los derechos reservados</p>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#china">China</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+  <script>
+  /* ─── CURSOR ─── */
+  const cur   = document.getElementById('cursor');
+  const trail = document.getElementById('cursorTrail');
+  let mx = 0, my = 0, tx = 0, ty = 0;
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cur.style.cssText = `left:${mx}px;top:${my}px`;
+  });
+  (function animTrail() {
+    tx += (mx - tx) * .12; ty += (my - ty) * .12;
+    trail.style.cssText = `left:${tx}px;top:${ty}px`;
+    requestAnimationFrame(animTrail);
+  })();
+  document.querySelectorAll('a,button,.gg-item,.video-card,.colab-card').forEach(el => {
+    el.addEventListener('mouseenter', () => cur.classList.add('big'));
+    el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+  });
+
+  /* ─── NAV SCROLL ─── */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('solid', window.scrollY > 80);
+  }, { passive: true });
+
+  /* ─── HAMBURGER ─── */
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('navMobile');
+  ham.addEventListener('click', () => {
+    const open = ham.classList.toggle('open');
+    mob.classList.toggle('open', open);
+    ham.setAttribute('aria-expanded', open);
+    mob.setAttribute('aria-hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    ham.classList.remove('open'); mob.classList.remove('open');
+    ham.setAttribute('aria-expanded', false); mob.setAttribute('aria-hidden', true);
+    document.body.style.overflow = '';
+  }));
+
+  /* ─── GALERÍA LIGHTBOX ─── */
+  const galeriaItems = [...document.querySelectorAll('.gg-item')];
+  const glb      = document.getElementById('galeriaLightbox');
+  const glbImg   = document.getElementById('galeriaLbImg');
+  const glbCap   = document.getElementById('galeriaLbCap');
+  const glbCount = document.getElementById('galeriaLbCounter');
+  let currentIdx = 0;
+
+  function openGLB(idx) {
+    currentIdx = idx;
+    const item = galeriaItems[idx];
+    const img  = item.querySelector('img');
+    const cap  = item.querySelector('figcaption');
+    glbImg.src = img.src; glbImg.alt = img.alt;
+    glbCap.textContent = cap ? cap.textContent : '';
+    glbCount.textContent = `${idx + 1} / ${galeriaItems.length}`;
+    glb.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeGLB() {
+    glb.hidden = true;
+    glbImg.src = '';
+    document.body.style.overflow = '';
+  }
+  galeriaItems.forEach((item, i) => {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', () => openGLB(i));
+    item.setAttribute('tabindex', '0');
+    item.addEventListener('keydown', e => { if (e.key === 'Enter') openGLB(i); });
+  });
+  document.getElementById('galeriaLbClose').addEventListener('click', closeGLB);
+  document.getElementById('galeriaLbPrev').addEventListener('click', () => {
+    openGLB((currentIdx - 1 + galeriaItems.length) % galeriaItems.length);
+  });
+  document.getElementById('galeriaLbNext').addEventListener('click', () => {
+    openGLB((currentIdx + 1) % galeriaItems.length);
+  });
+  glb.addEventListener('click', e => { if (e.target === glb) closeGLB(); });
+  document.addEventListener('keydown', e => {
+    if (!glb.hidden) {
+      if (e.key === 'Escape')     closeGLB();
+      if (e.key === 'ArrowLeft')  openGLB((currentIdx - 1 + galeriaItems.length) % galeriaItems.length);
+      if (e.key === 'ArrowRight') openGLB((currentIdx + 1) % galeriaItems.length);
+    }
+  });
+
+  /* ─── VÍDEO LIGHTBOX ─── */
+  const lb      = document.getElementById('videoLightbox');
+  const lbFrame = document.getElementById('lightboxFrame');
+  const lbClose = document.getElementById('lightboxClose');
+  document.querySelectorAll('.video-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      lbFrame.src = thumb.dataset.src;
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  const closeLb = () => { lb.hidden = true; lbFrame.src = ''; document.body.style.overflow = ''; };
+  lbClose.addEventListener('click', closeLb);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
+
+  /* ─── FORMULARIO ─── */
+  document.getElementById('contactoForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const ok = document.getElementById('formOk');
+    ok.hidden = false;
+    e.target.reset();
+    setTimeout(() => { ok.hidden = true; }, 5000);
+  });
+
+  /* ─── SCROLL TOP ─── */
+  const st = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => st.classList.toggle('show', window.scrollY > 600), { passive: true });
+  st.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ─── INTERSECTION OBSERVER (fade-in + disc-fill) ─── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade,.tl-item,.disc-item,.logro,.video-card,.gg-item,.colab-card,.sobre-inner,.sobre-img-wrap,.sobre-text').forEach(el => {
+    el.classList.add('fade');
+    io.observe(el);
+  });
+
+  /* ─── STAGGER ─── */
+  ['.tl-item','.disc-item','.logro','.video-card','.colab-card','.gg-item'].forEach(sel => {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.06}s`;
+    });
+  });
+
+  /* ─── STRIP TIMELINE — AUTOPLAY + FLECHAS ─── */
+  (function() {
+    const inner   = document.getElementById('stsInner');
+    const btnPrev = document.getElementById('stsPrev');
+    const btnNext = document.getElementById('stsNext');
+    if (!inner) return;
+
+    const SPEED    = 0.2;
+
+    let autoPos  = 0;
+    let raf      = null;
+    let paused   = false;
+    let pauseTimer = null;
+
+    function tick() {
+      if (!paused) {
+        autoPos += SPEED;
+        const max = inner.scrollWidth - inner.clientWidth;
+        if (autoPos >= max) autoPos = 0;
+        inner.scrollLeft = autoPos;
+      }
+      raf = requestAnimationFrame(tick);
+    }
+    raf = requestAnimationFrame(tick);
+
+    function pauseTemp(ms = 4000) {
+      paused = true;
+      clearTimeout(pauseTimer);
+      pauseTimer = setTimeout(() => { paused = false; }, ms);
+    }
+
+    function smoothScroll(target, duration) {
+      const start = inner.scrollLeft;
+      const dist  = target - start;
+      const t0    = performance.now();
+      function step(now) {
+        const p = Math.min((now - t0) / duration, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        inner.scrollLeft = start + dist * ease;
+        autoPos = inner.scrollLeft;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    btnPrev.addEventListener('click', () => {
+      pauseTemp();
+      smoothScroll(Math.max(0, inner.scrollLeft - 440), 420);
+    });
+    btnNext.addEventListener('click', () => {
+      pauseTemp();
+      const max = inner.scrollWidth - inner.clientWidth;
+      smoothScroll(Math.min(max, inner.scrollLeft + 440), 420);
+    });
+
+    inner.addEventListener('mouseenter', () => pauseTemp(99999));
+    inner.addEventListener('mouseleave', () => pauseTemp(1200));
+    inner.addEventListener('touchstart', () => pauseTemp(5000), { passive: true });
+    inner.addEventListener('scroll', () => { autoPos = inner.scrollLeft; }, { passive: true });
+  })();
+
+  /* ─── PARTÍCULAS FRASE ─── */
+  document.querySelectorAll('.frase-particles span').forEach((sp, i) => {
+    sp.style.cssText = `--x:${10+i*18}%;--y:${20+(i%3)*25}%;--s:${6+i*4}px;animation-delay:${i*.4}s`;
+  });
+  </script>
+</body>
+</html>
